@@ -1,0 +1,9 @@
+{% if produtosRecentes %}
+    <ul>
+    {% for produto in produtosRecentes %}
+        <li><a href="{% url 'blog:detail' produto.id %}">{{ produto.produto_nome}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Nenhum produto cadastrado.</p>
+{% endif %}
