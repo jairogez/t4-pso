@@ -1,6 +1,7 @@
 A partir do diretorio raiz deste projeto, execute os seguintes comandos:
 
 $ docker-compose create
+
 $ docker-compose run web python /app/fontes/manage.py migrate
 
 Execute entao o cadastro de um usuario admin para cadastrar/modificar produtos:
